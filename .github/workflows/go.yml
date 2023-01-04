@@ -3,7 +3,7 @@ on:
   workflow_call:
 jobs:
   call-gotestbuildvettidy:
-    uses: ./.github/workflows/workflow-2.yml
+    uses: ./.github/workflows/gotestbuildvettidy.yml
   call-gosec:
     uses: ./.github/workflows/gosec.yml
   call-golangci-lint:
