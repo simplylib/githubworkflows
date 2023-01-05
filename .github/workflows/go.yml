@@ -3,8 +3,11 @@ on:
   workflow_call:
 jobs:
   call-gotestbuildvettidy:
+    if: github.actor != 'dependabot[bot]'
     uses: ./.github/workflows/gotestbuildvettidy.yml
   call-gosec:
+    if: github.actor != 'dependabot[bot]'
     uses: ./.github/workflows/gosec.yml
   call-golangci-lint:
+    if: github.actor != 'dependabot[bot]'
     uses: ./.github/workflows/golangci-lint.yml
